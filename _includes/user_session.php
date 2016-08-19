@@ -1,0 +1,10 @@
+<?php
+error_reporting(0); 
+session_start();
+$loged_user=$_SESSION['users'];
+if(!$loged_user)
+{
+header("location:../signin.php");
+exit;
+}
+?>
